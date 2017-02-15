@@ -1,0 +1,26 @@
+h1 {
+	color: green;
+	text-transform: uppercase;
+}
+.icon {
+	padding-top: 50px;
+}
+img {
+	width: 90%;
+	height: 90%;
+}
+.element {
+	padding-top: 50px;
+}
+.head {
+	height: 100px;
+	border: 2px solid #000;
+}
+.level-2 {
+	height: 50px;
+	background: green;
+	margin-top: 25px;
+	padding-top: 15px;
+	color: #fff;
+	border: 1px solid #333;
+}
