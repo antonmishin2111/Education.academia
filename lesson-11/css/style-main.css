@@ -1,0 +1,43 @@
+body {
+	background-color: #f5f5f5;
+}
+.main-head {
+	margin-top: 7%;
+}
+.main-logo-border {
+	width: 150px;
+	height: 55px;
+	border: 3px solid #706b73;
+	text-align: center;
+	line-height: 49px;
+}
+.main-logo p {
+	font-size: 36px;
+	color: #6f6f6f;
+	font-family: 'Open Sans', sans-serif
+	font-weight: 600;
+}
+.main-logo p span {
+	color: #fa9a87;
+}
+.box {
+	top: 0;
+	right: 0;
+}
+.box-line-rl {
+	height: 20px;
+	width: 34px;
+	border-bottom: 4px solid #706b73;
+	border-top: 4px solid #706b73;
+	position: absolute;
+	right: 0;
+}
+.box-line-center {
+	width: 34px;
+	border: 2px solid #706b73; 
+	position: absolute;
+	top: 50%;
+	right: 0;
+	margin-top: -2px;
+}
+
