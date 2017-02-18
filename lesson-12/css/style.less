@@ -1,0 +1,165 @@
+/* Шрифты*/ 
+.opn-reg {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+.opn-bold {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+}
+
+/* Используемые цаета */
+@white: #fff;
+@general: #706b73;
+@bgc: #f5f5f5;
+@text-red: #fc6744;
+@base-text:#626262;
+
+/* Стили */ 
+body {
+	font-size: 14px;
+	.opn-reg;
+}
+button, input, textarea {
+	&:focus {
+		outline: none;
+	}
+}
+header{
+	background-color: @bgc;
+	min-height: 630px;
+	height: 100vh;
+}
+.main {
+	&-head {
+		margin-top: 3%;
+	}
+	&-logo-border {
+		width: 150px;
+		height: 55px;
+		border: 3px solid @general;
+		text-align: center;
+		line-height: 49px;
+		p {
+			.opn-bold;
+			font-size: 36px;
+			color: @general;
+			span {
+				color: lighten(@text-red, 3%);
+			}
+		}
+	}
+}
+.box {
+	&-nav {
+		width: 55px;
+		position: relative;
+		float: right;
+		height: 55px;
+	}
+	&-line {
+	width: 35px;
+	height: 4px;
+	background-color: @general;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	--webkit-transform: translateY(-2px);
+	-ms-transform: translateY(-2px);
+	-o-transform: translateY(-2px);
+	transform: translateY(-2px);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+		&::before, &::after {
+			background-color: @general;
+			display: inline-block;
+			content: '';
+			width: 35px;
+			height: 4px;
+			position: absolute;
+			right: 0;
+			top: 50%;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			-ms-border-radius: 5px;
+			-o-border-radius: 5px;
+			border-radius: 5px;	
+		}
+		&::before{
+			--webkit-transform: translateY(-10px);
+			-ms-transform: translateY(-10px);
+			-o-transform: translateY(-10px);
+			transform: translateY(-10px);
+		}
+		&::after {
+			--webkit-transform: translateY(6px);
+			-ms-transform: translateY(6px);
+			-o-transform: translateY(6px);
+			transform: translateY(6px);
+		}
+	}
+	&-text {
+		text-align: center;
+		color: @general;
+		margin-top: 2%;
+		h1 {
+			font-size: 50px;
+			.opn-bold;
+			color: @base-text;
+			span {
+				color: @text-red;
+			}
+		}
+		p {
+			font-size: 16px;
+			padding: 25px 20px 0 20px;
+		}
+	}
+	&-form {
+		margin-top: 5%;
+		padding: 27px;
+		background-color: @white;
+		-webkit-box-shadow: 0px 0px 57px 0px rgba(20, 20, 21, 0.2);
+		box-shadow: 0px 0px 57px 0px rgba(20, 20, 21, 0.2);
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		-ms-border-radius: 2px;
+		-o-border-radius: 2px;
+		border-radius: 2px;
+		p {
+			text-align: center;
+			font-size: 20px;
+			span {
+				.opn-bold;
+				color: @text-red;
+			}
+		}
+		input, textarea {
+			width: 100%;
+			border: none;
+			border-bottom: 1px solid @base-text;
+			margin-top: 20px;
+			font-size: 15px;
+		}
+		&-btn {
+			background-color: @text-red;
+			border: none;
+			padding: 15px 45px;
+			color: @white;
+			font-size: 16px;
+			display: block;
+			margin: 0 auto;
+			margin-top: 18px;
+			-webkit-border-radius: 30px;
+			-moz-border-radius: 30px;
+			-ms-border-radius: 30px;
+			-o-border-radius: 30px;
+			border-radius: 30px;
+		} 
+	}
+}
+
