@@ -1,0 +1,33 @@
+.flex-container {
+    margin-top: 5rem;
+    height:10rem;
+    background-color: #1a242f;
+    color: #FFFFFF;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    -o-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+}
+.flex-block1, .flex-block2, .flex-block3, .flex-block4, .flex-block5 {
+    background-color: #31b0d5;
+    margin: auto;
+    text-align: center;
+    -webkit-flex-basis: 15%;
+    -moz-flex-basis: 15%;
+    -ms-flex-basis: 15%;
+    -o-flex-basis: 15%;
+    flex-basis: 15%;
+}
+
