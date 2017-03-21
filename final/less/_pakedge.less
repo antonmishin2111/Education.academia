@@ -1,0 +1,96 @@
+/* Основные переменные*/
+
+/* Шрифты */
+
+@font-face {
+	font-family: Brandon;
+	// src: url(../fonts/Brandon Grotesque/Brandon_blk.otf);
+	src: url('../fonts/Brandon Grotesque/brandon_blk-webfont.eot');
+	src: url('../fonts/Brandon Grotesque/brandon_blk-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/Brandon Grotesque/brandon_blk-webfont.woff2') format('woff2'),
+	     url('../fonts/Brandon Grotesque/brandon_blk-webfont.woff') format('woff'),
+	     url('../fonts/Brandon Grotesque/brandon_blk-webfont.ttf') format('truetype'),
+	     url('../fonts/Brandon Grotesque/brandon_blk-webfont.svg#brandon_grotesqueblack') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Neptuna;
+	src: url('../fonts/Neptune/neptune-webfont.eot');
+	src: url('../fonts/Neptune/neptune-webfont.eot?#iefix') format('embedded-opentype'),
+			 url('../fonts/Neptune/neptune-webfont.woff2') format('woff2'),
+			 url('../fonts/Neptune/neptune-webfont.woff') format('woff'),
+			 url('../fonts/Neptune/neptune-webfont.ttf') format('truetype'),
+			 url('../fonts/Neptune/neptune-webfont.svg#neptuneregular') format('svg');
+	font-weight: normal;
+	font-style: normal;	
+}
+
+@font-face {
+	font-family: NotoSansReg;
+	/* src: url(../fonts/Noto_Sans/NotoSans-Regular.ttf); */
+	src: url('../fonts/Noto_Sans/notosans-regular-webfont.eot');
+	src: url('../fonts/Noto_Sans/notosans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/Noto_Sans/notosans-regular-webfont.woff2') format('woff2'),
+	     url('../fonts/Noto_Sans/notosans-regular-webfont.woff') format('woff'),
+	     url('../fonts/Noto_Sans/notosans-regular-webfont.ttf') format('truetype'),
+	     url('../fonts/Noto_Sans/notosans-regular-webfont.svg#noto_sansregular') format('svg');
+	font-weight: normal;
+	font-style: normal;	
+}
+
+@font-face {
+	font-family: NotoSansItl;
+	/* src: url(../fonts/Noto_Sans/NotoSans-Italic.ttf); */
+	src: url('../fonts/Noto_Sans/notosans-italic-webfont.eot');
+	src: url('../fonts/Noto_Sans/notosans-italic-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/Noto_Sans/notosans-italic-webfont.woff2') format('woff2'),
+	     url('../fonts/Noto_Sans/notosans-italic-webfont.woff') format('woff'),
+	     url('../fonts/Noto_Sans/notosans-italic-webfont.ttf') format('truetype'),
+	     url('../fonts/Noto_Sans/notosans-italic-webfont.svg#noto_sansitalic') format('svg');
+	font-weight: normal;
+	font-style: normal;	
+}
+
+@font-face {
+	font-family: NotoSansBldItl;
+	/* src: url(../fonts/Noto_Sans/NotoSans-BoldItalic.ttf); */
+	src: url('../fonts/Noto_Sans/notosans-bolditalic-webfont.eot');
+	src: url('../fonts/Noto_Sans/notosans-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/Noto_Sans/notosans-bolditalic-webfont.woff2') format('woff2'),
+	     url('../fonts/Noto_Sans/notosans-bolditalic-webfont.woff') format('woff'),
+	     url('../fonts/Noto_Sans/notosans-bolditalic-webfont.ttf') format('truetype'),
+	     url('../fonts/Noto_Sans/notosans-bolditalic-webfont.svg#noto_sansbold_italic') format('svg');
+	font-weight: normal;
+	font-style: normal;	
+}
+
+@font-face {
+	font-family: MontserratB;
+	/* src: url(../fonts/Montserrat/Montserrat-Bold.ttf); */
+	src: url('../fonts/Montserrat/montserrat-bold-webfont.eot');
+	src: url('../fonts/Montserrat/montserrat-bold-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/Montserrat/montserrat-bold-webfont.woff2') format('woff2'),
+	     url('../fonts/Montserrat/montserrat-bold-webfont.woff') format('woff'),
+	     url('../fonts/Montserrat/montserrat-bold-webfont.ttf') format('truetype'),
+	     url('../fonts/Montserrat/montserrat-bold-webfont.svg#montserratbold') format('svg');
+	font-weight: normal;
+	font-style: normal;	
+}
+
+/* Стили повторяющиеся */
+.gradientborder {
+	border: 2px solid @white;
+		border-image: 1 linear-gradient(to right, 
+    @firstgradient, @lastgradient);
+}
+
+
+/* Цвета */
+@mainbg: #121212;
+@white: #ffffff;
+@general: #757575;
+@firstgradient: #802774;
+@lastgradient: #db071e;
+@yellow: #F4F220;
