@@ -1,11 +1,10 @@
 
-/*круговые диаграммы*/
 $(document).ready(function() {
+	/*круговые диаграммы*/
 	$(window).scroll(function() {
-		var start = $('.skills').offset().top-200;
+		var start = $('#skills').offset().top-800;
 
-		if ((($(this).scrollTop() > start)&($(this).scrollTop() < start+200))) {
-
+		if ((($(this).scrollTop() > start)&($(this).scrollTop()< start+50))) {
 			$('.dial1').knob();    
 			$({animatedVal: 0}).animate({animatedVal: 70}, {
 				duration: 1000,
@@ -108,17 +107,23 @@ $(document).ready(function() {
        });
      }
    });
-
 	/*end forms*/
+
 	/*Menu*/
-	$(function() {
-	  var pull    = $('#pull');
-	    menu    = $('.nav-menu-list');
-	    menuHeight  = menu.height();
-	  $(pull).on('click', function(e) {
-	    e.preventDefault();
-	    $(menu).slideToggle('slow');
-	  });
-	});
+    $(function() {
+        var pull    = $('.cmn-toggle-switch');
+        menu    = $('.nav-menu-list');
+        menuHeight  = menu.height();
+        $(pull).on('click', function(e) {
+            e.preventDefault();
+            $(this).toggleClass('active');
+            $(menu).slideToggle('slow');
+        });
+    });
 	/*end menu*/
+
+	/*animation*/
+	new WOW().init();
+	/*end animation*/
+
 });

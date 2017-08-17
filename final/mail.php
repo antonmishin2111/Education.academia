@@ -15,7 +15,7 @@ $message = "
 Форма с которой пришло: ".htmlspecialchars($whatever)."<br />
 Имя пользователя: ".htmlspecialchars($name)."<br />
 Email: ".htmlspecialchars($email)."<br />
-Subjects: ".htmlspecialchars($subjects)."<br />
+Subjects: ".htmlspecialchars($subjects)."<br /><br />
 Сообщение: ".htmlspecialchars($message);
 // Отправляем письмо при помощи функции mail();
 $headers = "From: testeducation.ru <antmixa@testeducation.ru>\r\nContent-type: text/html; charset=UTF-8 \r\n";
